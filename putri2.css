@@ -1,0 +1,403 @@
+    /* ini bagian Home */
+*, html {
+    margin: 0;
+    padding: 0;
+}
+.container-navbar {
+    background-color: blueviolet;
+    height: 7vh;
+}
+ .ul-navbar {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+.li-home{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+ }
+
+.li-home:hover {
+    background-color: hotpink;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+    transition-delay: .0s;
+}
+
+.a-navbar {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-isi {
+    background-color: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+}
+.img-content {
+    height: 50%
+}
+.container-footer {
+    background-color: blueviolet;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+}
+    /* Home END */
+
+
+    /* ini bagian P or L */
+.container-PorL {
+    background-color: hotpink;
+    display: grid; /* Gunakan grid sebagai ganti flexbox */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Buat kolom responsif */
+    gap: 1px; /* Berikan jarak antar gambar */
+    width: 100%;
+}
+
+.PorL-isi {
+    padding: 0;
+    width: 100%; /* Biarkan lebar mengikuti grid */
+    aspect-ratio: 1/1; /* Menjaga rasio aspek gambar tetap square */
+    overflow: hidden; /* Menghindari gambar keluar dari container */
+}
+
+.PorL-isi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pastikan gambar menutupi area dengan baik */
+    display: block; /* Hilangkan spasi tambahan di bawah gambar */
+}
+    /* P or L end */
+
+
+    /* ini bagian About isi */
+.container-about-isi {
+    max-width: 600px;
+}
+.container-about-isi h1 {
+    color: #081b29;
+    font-size: 50px;
+    font-weight: 700; 
+    line-height: 1.2;
+}
+
+.container-about-isi h3 {
+    color: #081b29;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container-about-isi p {
+    color: #081b29;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    font-style: oblique;
+}
+
+.container-about-isi-2 {
+    max-width: 600px;
+}
+.container-about-isi-2 h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700; 
+    line-height: 1.2;
+}
+
+.container-about-isi-2 h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.container-about-isi-2 p {
+    font-size: 16px;
+    color: #fff;
+    margin: 20px 0 40px;
+    font-style: oblique;
+}
+
+
+.container-about {
+    display: flex;
+  }
+  
+  .home-L,
+  .home-P {
+    flex: 1;
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+  }
+  
+  .home-L {
+    background: url(/MyPhoto/My\ photo.jpeg) no-repeat center;
+    background-size: cover;
+  }
+  
+  .home-P {
+    background: url(/MyPhoto/pangestuu2.jpeg) no-repeat center;
+    background-size: cover;
+  }
+  
+  .container-about-isi {
+    max-width: 600px;
+  }
+
+  /* ini css Button start */
+
+  .about-button a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+} 
+
+.about-button a:hover {
+    color: #081b29;
+}
+.about-button a:nth-child(2) {
+    background: transparent;
+    color: #081b29;
+}
+
+.about-button a:nth-child(2):hover {
+    color: #ffff;
+}
+
+.about-button a:nth-child(2)::before {
+    background: #081b29;
+}
+
+.about-button a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    transition-delay: .2s;
+    background: #ffff;
+}
+
+.about-button a:hover::before {
+    width: 100%;
+}
+
+.about-button-2 a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid silver;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+} 
+
+.about-button-2 a:hover {
+    color: #ffff;
+}
+.about-button-2 a:nth-child(2) {
+    background: transparent;
+    color: #ffff;
+}
+
+.about-button-2 a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.about-button-2 a:nth-child(2)::before {
+    background: #ffff;
+}
+
+.about-button-2 a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    transition-delay: .5s;
+    background: #081b29;
+}
+
+.about-button-2 a:hover::before {
+    width: 100%;
+}
+
+    /* ini css button about  */
+.about-logo {
+    position: absolute;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about-logo a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #081b29;
+    border-radius: 50%;
+    size: 20%;
+    color: #081b29;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.about-logo-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.about-logo-2 a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    size: 20%;
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+  
+    /* About End */
+
+
+    /* ini bagian Contact US */
+.body-contact {
+    height: 86vh;
+    font-family: 'Outfit';
+    background: linear-gradient(#000, #fff);
+}
+.container-contact {
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #DE73FF;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #c48cd5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #081b29;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(300deg,#DE73FF,#ff69b4);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+.contact-right img{
+    width: 500px;
+    filter: opacity(6%);
+}
+
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
